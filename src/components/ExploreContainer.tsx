@@ -1,12 +1,35 @@
 import './ExploreContainer.css';
+import { sync, reload } from '@capacitor/live-updates';
+import { IonButton, IonCard, IonCardContent } from '@ionic/react';
+import { useState } from 'react';
 
 interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
+  const [syncResp, setSyncResp] = useState<string>('')
   return (
     <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <IonCard>
+        <IonCardContent>
+          <strong>Charter Test - Live Update 1</strong>
+          <IonButton 
+            onClick={async () => setSyncResp(JSON.stringify(await sync()))} 
+            style={{ display: 'flex', justifyContent: 'center'}}
+          >
+            Sync
+          </IonButton>
+          {syncResp && (<pre style={{ overflowWrap: 'normal' }}>
+            {syncResp}
+          </pre>)}
+          <IonButton 
+            onClick={async () => { reload(); setSyncResp('') }} 
+            style={{ display: 'flex', justifyContent: 'center'}}
+          >
+            Reload
+          </IonButton>
+        </IonCardContent>
+      </IonCard>
+      
     </div>
   );
 };

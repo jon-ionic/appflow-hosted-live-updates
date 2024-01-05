@@ -6,6 +6,15 @@ const config: CapacitorConfig = {
   webDir: 'dist',
   server: {
     androidScheme: 'https'
+  },
+  plugins: {
+    LiveUpdates: {
+      appId: 'a1e44fba',
+      channel: 'Production',
+      autoUpdateMethod: 'none',
+      maxVersions: 2,
+      key: 'ionic_cloud_public.pem',
+    },
   }
 };
 
