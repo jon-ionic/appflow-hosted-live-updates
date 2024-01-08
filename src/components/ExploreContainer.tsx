@@ -11,9 +11,9 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
     <div id="container">
       <IonCard>
         <IonCardContent>
-          <strong>Charter Test - Live Update 1</strong>
+          <strong>Charter Test - Live Update Beta 5 - 0.0.1</strong>
           <IonButton 
-            onClick={async () => setSyncResp(JSON.stringify(await sync()))} 
+            onClick={async () => setSyncResp(JSON.stringify(await sync()))}
             style={{ display: 'flex', justifyContent: 'center'}}
           >
             Sync
@@ -22,14 +22,13 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
             {syncResp}
           </pre>)}
           <IonButton 
-            onClick={async () => { reload(); setSyncResp('') }} 
+            onClick={async () => { reload(); setSyncResp('') }}
             style={{ display: 'flex', justifyContent: 'center'}}
           >
             Reload
           </IonButton>
         </IonCardContent>
       </IonCard>
-      
     </div>
   );
 };
