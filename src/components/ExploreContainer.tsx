@@ -11,7 +11,7 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
     <div id="container">
       <IonCard>
         <IonCardContent>
-          <strong>Charter Test - Live Update Beta 5 - 0.0.1</strong>
+          <strong>Charter Test - Native Build 1</strong>
           <IonButton 
             onClick={async () => setSyncResp(JSON.stringify(await sync()))}
             style={{ display: 'flex', justifyContent: 'center'}}

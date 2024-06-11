@@ -15,7 +15,7 @@ const config: CapacitorConfig = {
       maxVersions: 2,
       key: 'ionic_cloud_public.pem',
       // @ts-ignore
-      strategy: 'zip'
+      strategy: 'differential'
     },
   }
 };
