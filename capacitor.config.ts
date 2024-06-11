@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'charter-live-updates',
+  appName: 'appflow-hosted-live-updates',
   webDir: 'dist',
   server: {
     androidScheme: 'https'

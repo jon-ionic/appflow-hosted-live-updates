@@ -1,5 +1,5 @@
 {
-  "name": "charter-live-updates",
+  "name": "appflow-hosted-live-updates",
   "integrations": {
     "capacitor": {}
   },
