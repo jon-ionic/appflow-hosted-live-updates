@@ -27,3 +27,6 @@ yarn-error.log*
 
 # Optional eslint cache
 .eslintcache
+
+ionic_cloud_private.pem
+appflow_private.pem

@@ -13,7 +13,7 @@ const config: CapacitorConfig = {
       channel: 'Production',
       autoUpdateMethod: 'none',
       maxVersions: 2,
-      key: 'ionic_cloud_public.pem',
+      key: 'appflow_public.pem',
       // @ts-ignore
       strategy: 'differential'
     },
